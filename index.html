@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartLogic | Propositional Logic</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="badge">
+            MATHEMATICS CIA
+        </div>
+
+        <h1>SMART<span>LOGIC</span></h1>
+
+        <p>
+            Smart Home Automation using Propositional Logic
+        </p>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+
+        <a href="#question">Question</a>
+        <a href="#logic">Logic</a>
+        <a href="#rules">15 Rules</a>
+        <a href="#circuit">Circuit</a>
+        <a href="#inference">Inference</a>
+        <a href="#simulator">Simulator</a>
+
+    </nav>
+
+
+    <main>
+
+
+        <!-- ================= ASSIGNMENT QUESTION ================= -->
+
+        <section id="question" class="hero-section">
+
+            <div class="section-label">
+                ASSIGNMENT 11
+            </div>
+
+            <h2>Smart Home Automation</h2>
+
+            <div class="question-box">
+
+                <p>
+                    <strong>Question:</strong>
+                </p>
+
+                <p>
+                    Study Google Home or Alexa.
+                </p>
+
+                <p>
+                    Rules such as:
+                </p>
+
+                <ul>
+                    <li>
+                        "If motion detected AND it is night THEN switch on light."
+                    </li>
+
+                    <li>
+                        "If smoke detected THEN sound alarm."
+                    </li>
+                </ul>
+
+                <p>
+                    Students should:
+                </p>
+
+                <ol>
+                    <li>Create at least 15 logical rules.</li>
+                    <li>Draw a logical circuit.</li>
+                    <li>Use inference.</li>
+                </ol>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRODUCTION ================= -->
+
+        <section>
+
+            <div class="section-label">
+                INTRODUCTION
+            </div>
+
+            <h2>Smart Home Automation</h2>
+
+            <p>
+                Smart home systems use sensors and logical conditions
+                to make automatic decisions. Devices such as lights,
+                alarms, fans, heaters and security systems can respond
+                to different conditions detected inside a home.
+            </p>
+
+            <p>
+                This project demonstrates how <strong>propositional
+                logic</strong> can be applied to smart home automation.
+                Each condition is represented by a proposition having
+                either a TRUE or FALSE value, and logical operators are
+                used to determine the appropriate action.
+            </p>
+
+            <div class="info-card">
+
+                <strong>Project Focus</strong>
+
+                <p>
+                    Sensors → Logical Conditions → Inference → Automatic Action
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROPOSITIONAL LOGIC ================= -->
+
+        <section id="logic">
+
+            <div class="section-label">
+                CONCEPT
+            </div>
+
+            <h2>What is Propositional Logic?</h2>
+
+            <p>
+                Propositional logic is a branch of mathematical logic
+                that deals with statements which can be either
+                <strong>TRUE</strong> or <strong>FALSE</strong>.
+            </p>
+
+            <h3>Example</h3>
+
+            <div class="proposition-grid">
+
+                <div class="prop-card">
+                    <span>P</span>
+                    <p>Motion is detected</p>
+                </div>
+
+                <div class="prop-card">
+                    <span>Q</span>
+                    <p>It is night</p>
+                </div>
+
+                <div class="prop-card">
+                    <span>R</span>
+                    <p>Light is switched ON</p>
+                </div>
+
+            </div>
+
+            <div class="formula">
+                (P ∧ Q) → R
+            </div>
+
+            <p class="formula-description">
+                If motion is detected AND it is night,
+                then the light will turn ON.
+            </p>
+
+            <div class="operator-grid">
+
+                <div>
+                    <strong>∧</strong>
+                    <p>AND</p>
+                </div>
+
+                <div>
+                    <strong>∨</strong>
+                    <p>OR</p>
+                </div>
+
+                <div>
+                    <strong>¬</strong>
+                    <p>NOT</p>
+                </div>
+
+                <div>
+                    <strong>→</strong>
+                    <p>IMPLIES</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= 15 LOGICAL RULES ================= -->
+
+        <section id="rules">
+
+            <div class="section-label">
+                LOGICAL RULES
+            </div>
+
+            <h2>15 Smart Home Logical Rules</h2>
+
+            <p>
+                The following rules represent possible decisions in a
+                smart home automation system.
+            </p>
+
+
+            <div class="rules-grid">
+
+
+                <!-- RULE 1 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">01</div>
+
+                    <h3>Automatic Lighting</h3>
+
+                    <p>
+                        If motion is detected and it is night,
+                        the light turns ON.
+                    </p>
+
+                    <div class="rule-formula">
+                        (P ∧ N) → L
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 2 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">02</div>
+
+                    <h3>Smoke Alarm</h3>
+
+                    <p>
+                        If smoke is detected, the alarm is activated.
+                    </p>
+
+                    <div class="rule-formula">
+                        S → A
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 3 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">03</div>
+
+                    <h3>Gas Safety</h3>
+
+                    <p>
+                        If a gas leak is detected, the alarm is activated.
+                    </p>
+
+                    <div class="rule-formula">
+                        G → A
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 4 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">04</div>
+
+                    <h3>Automatic Fan</h3>
+
+                    <p>
+                        If the temperature is high, the fan turns ON.
+                    </p>
+
+                    <div class="rule-formula">
+                        T → F
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 5 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">05</div>
+
+                    <h3>Automatic Heater</h3>
+
+                    <p>
+                        If the temperature is low, the heater turns ON.
+                    </p>
+
+                    <div class="rule-formula">
+                        C → H
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 6 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">06</div>
+
+                    <h3>Door Security</h3>
+
+                    <p>
+                        If the door is open and nobody is home,
+                        a security alert is activated.
+                    </p>
+
+                    <div class="rule-formula">
+                        (D ∧ ¬O) → A
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 7 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">07</div>
+
+                    <h3>Window Security</h3>
+
+                    <p>
+                        If a window is open at night,
+                        a security alert is activated.
+                    </p>
+
+                    <div class="rule-formula">
+                        (W ∧ N) → A
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 8 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">08</div>
+
+                    <h3>Water Leak Protection</h3>
+
+                    <p>
+                        If a water leak is detected,
+                        the water supply valve is turned OFF.
+                    </p>
+
+                    <div class="rule-formula">
+                        W → ¬V
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 9 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">09</div>
+
+                    <h3>Smart Lighting</h3>
+
+                    <p>
+                        If the room is dark and motion is detected,
+                        the light turns ON.
+                    </p>
+
+                    <div class="rule-formula">
+                        (Dk ∧ P) → L
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 10 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">10</div>
+
+                    <h3>Smart Door Unlock</h3>
+
+                    <p>
+                        If an authorized user is detected,
+                        the door can be unlocked.
+                    </p>
+
+                    <div class="rule-formula">
+                        U → ¬D
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 11 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">11</div>
+
+                    <h3>Unauthorized Access</h3>
+
+                    <p>
+                        If an unauthorized person is detected,
+                        the security alarm is activated.
+                    </p>
+
+                    <div class="rule-formula">
+                        ¬U → A
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 12 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">12</div>
+
+                    <h3>Rain Protection</h3>
+
+                    <p>
+                        If rain is detected and the window is open,
+                        the window closes.
+                    </p>
+
+                    <div class="rule-formula">
+                        (R ∧ W) → C
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 13 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">13</div>
+
+                    <h3>Energy Saving</h3>
+
+                    <p>
+                        If nobody is home and the system is active,
+                        energy-saving mode is activated.
+                    </p>
+
+                    <div class="rule-formula">
+                        (¬O ∧ E) → ES
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 14 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">14</div>
+
+                    <h3>Automatic Cooling</h3>
+
+                    <p>
+                        If the temperature is high and motion is detected,
+                        the air conditioner turns ON.
+                    </p>
+
+                    <div class="rule-formula">
+                        (T ∧ P) → AC
+                    </div>
+
+                </div>
+
+
+                <!-- RULE 15 -->
+
+                <div class="rule-card">
+
+                    <div class="rule-number">15</div>
+
+                    <h3>Emergency Door Safety</h3>
+
+                    <p>
+                        If smoke is detected, the emergency door
+                        is unlocked.
+                    </p>
+
+                    <div class="rule-formula">
+                        S → ¬D
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOGICAL CIRCUIT ================= -->
+
+        <section id="circuit">
+
+            <div class="section-label">
+                LOGICAL CIRCUIT
+            </div>
+
+            <h2>Logical Circuit for Automatic Lighting</h2>
+
+            <p>
+                The following circuit represents the rule:
+                If motion is detected AND it is night, then the
+                light turns ON.
+            </p>
+
+            <div class="circuit">
+
+                <div class="circuit-input">
+                    <div class="circle">P</div>
+                    <p>Motion<br>Detected</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="and-gate">
+                    AND
+                </div>
+
+                <div class="line"></div>
+
+                <div class="circuit-output">
+                    <div class="circle output">L</div>
+                    <p>Light ON</p>
+                </div>
+
+                <div class="circuit-input second-input">
+                    <div class="circle">N</div>
+                    <p>It is<br>Night</p>
+                </div>
+
+            </div>
+
+            <div class="formula">
+                P ∧ N → L
+            </div>
+
+        </section>
+
+
+        <!-- ================= RULES OF INFERENCE ================= -->
+
+        <section id="inference">
+
+            <div class="section-label">
+                INFERENCE
+            </div>
+
+            <h2>Rules of Inference</h2>
+
+            <p>
+                Rules of inference are valid logical methods used
+                to derive a conclusion from given premises.
+            </p>
+
+
+            <div class="inference-grid">
+
+
+                <div class="inference-card">
+
+                    <h3>1. Modus Ponens</h3>
+
+                    <p>
+                        If P implies Q and P is true,
+                        then Q must be true.
+                    </p>
+
+                    <div class="inference-formula">
+                        P → Q<br>
+                        P<br>
+                        ∴ Q
+                    </div>
+
+                    <p>
+                        <strong>Example:</strong>
+                        If smoke is detected, alarm sounds.
+                        Smoke is detected. Therefore, the alarm sounds.
+                    </p>
+
+                </div>
+
+
+                <div class="inference-card">
+
+                    <h3>2. Modus Tollens</h3>
+
+                    <p>
+                        If P implies Q and Q is false,
+                        then P must be false.
+                    </p>
+
+                    <div class="inference-formula">
+                        P → Q<br>
+                        ¬Q<br>
+                        ∴ ¬P
+                    </div>
+
+                    <p>
+                        <strong>Example:</strong>
+                        If smoke is detected, alarm sounds.
+                        Alarm is not sounding. Therefore,
+                        smoke is not detected.
+                    </p>
+
+                </div>
+
+
+                <div class="inference-card">
+
+                    <h3>3. Conjunction</h3>
+
+                    <p>
+                        Two true propositions can be combined
+                        using AND.
+                    </p>
+
+                    <div class="inference-formula">
+                        P<br>
+                        Q<br>
+                        ∴ P ∧ Q
+                    </div>
+
+                    <p>
+                        <strong>Example:</strong>
+                        Motion is detected and it is night.
+                    </p>
+
+                </div>
+
+
+                <div class="inference-card">
+
+                    <h3>4. Simplification</h3>
+
+                    <p>
+                        If P AND Q is true, either P or Q can
+                        be concluded individually.
+                    </p>
+
+                    <div class="inference-formula">
+                        P ∧ Q<br>
+                        ∴ P
+                    </div>
+
+                    <p>
+                        <strong>Example:</strong>
+                        Motion is detected AND it is night.
+                        Therefore, motion is detected.
+                    </p>
+
+                </div>
+
+
+                <div class="inference-card">
+
+                    <h3>5. Hypothetical Syllogism</h3>
+
+                    <p>
+                        Two connected implications can be combined
+                        to form a new implication.
+                    </p>
+
+                    <div class="inference-formula">
+                        P → Q<br>
+                        Q → R<br>
+                        ∴ P → R
+                    </div>
+
+                    <p>
+                        <strong>Example:</strong>
+                        Smoke causes alarm, and alarm causes
+                        notification. Therefore, smoke causes notification.
+                    </p>
+
+                </div>
+
+
+                <div class="inference-card">
+
+                    <h3>6. Disjunctive Syllogism</h3>
+
+                    <p>
+                        If P OR Q is true and P is false,
+                        then Q must be true.
+                    </p>
+
+                    <div class="inference-formula">
+                        P ∨ Q<br>
+                        ¬P<br>
+                        ∴ Q
+                    </div>
+
+                    <p>
+                        <strong>Example:</strong>
+                        The system is either in day mode or night mode.
+                        It is not in day mode. Therefore, it is in night mode.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Inference Demonstration -->
+
+            <div class="inference-demo">
+
+                <h3>Inference Demonstration: Modus Ponens</h3>
+
+                <p>
+                    Rule: If smoke is detected, the alarm will sound.
+                </p>
+
+                <div class="demo-step">
+                    <strong>Premise 1:</strong>
+                    S → A
+                </div>
+
+                <div class="demo-step">
+                    <strong>Premise 2:</strong>
+                    S
+                    <span>(Smoke is detected)</span>
+                </div>
+
+                <div class="demo-step conclusion">
+                    <strong>Conclusion:</strong>
+                    ∴ A
+                    <span>(Alarm will sound)</span>
+                </div>
+
+                <p class="success">
+                    Therefore, the conclusion follows by
+                    <strong>Modus Ponens.</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SIMULATOR ================= -->
+
+        <section id="simulator">
+
+            <div class="section-label">
+                INTERACTIVE SIMULATOR
+            </div>
+
+            <h2>Automatic Lighting Simulator</h2>
+
+            <p>
+                Test the propositional rule by changing the
+                input conditions.
+            </p>
+
+            <div class="simulator-box">
+
+                <div class="input-group">
+
+                    <label for="motion">
+                        Motion Detected
+                    </label>
+
+                    <select id="motion">
+
+                        <option value="false">
+                            False
+                        </option>
+
+                        <option value="true">
+                            True
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="night">
+                        It is Night
+                    </label>
+
+                    <select id="night">
+
+                        <option value="false">
+                            False
+                        </option>
+
+                        <option value="true">
+                            True
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button onclick="checkLight()">
+                    CHECK LOGIC
+                </button>
+
+            </div>
+
+
+            <div id="result">
+
+                Select the conditions and click
+                <strong>CHECK LOGIC</strong>.
+
+            </div>
+
+
+            <div class="truth-mini">
+
+                <h3>Logic Being Tested</h3>
+
+                <div class="formula">
+                    (P ∧ N) → L
+                </div>
+
+                <p>
+                    Light turns ON only when both conditions
+                    are TRUE.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONCLUSION ================= -->
+
+        <section>
+
+            <div class="section-label">
+                CONCLUSION
+            </div>
+
+            <h2>Conclusion</h2>
+
+            <p>
+                Smart home automation can be represented using
+                propositional logic. By converting sensor conditions
+                into TRUE or FALSE propositions, logical operators
+                and rules of inference can be used to determine
+                appropriate actions.
+            </p>
+
+            <p>
+                This project demonstrates how mathematical logic
+                can be applied to real-world automated decision-making
+                systems such as smart lighting, security, alarms,
+                temperature control and energy management.
+            </p>
+
+        </section>
+
+
+        <!-- ================= STUDENT DETAILS ================= -->
+
+        <section class="student-section">
+
+            <div class="section-label">
+                PROJECT SUBMISSION
+            </div>
+
+            <h2>Assignment Completed By</h2>
+
+            <div class="student-name">
+                NUPUR SIYAON PANNA
+            </div>
+
+            <p>
+                Mathematics CIA
+            </p>
+
+            <p>
+                Assignment 11 — Smart Home Automation
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            SMARTLOGIC | Propositional Logic & Smart Home Automation
+        </p>
+
+        <p>
+            Mathematics CIA
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
